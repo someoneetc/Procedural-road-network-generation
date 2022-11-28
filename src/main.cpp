@@ -80,7 +80,7 @@ int main(int argc, char** argv)
     cout << "sub_square_size:  " << sub_square_size << endl;
     cout << "max_distance :  " << max_distance << endl;
 
-    screen = InitializeSDL( MAP_SIZE, MAP_SIZE );
+    //screen = InitializeSDL( MAP_SIZE, MAP_SIZE );
 
     readPng(map, density_map_path.c_str(), height_map_path.c_str());
 
@@ -97,9 +97,9 @@ int main(int argc, char** argv)
 
     network.mark_road_network(map);
 
-    while( NoQuitMessageSDL() ){
+    /*while( NoQuitMessageSDL() ){
         display_map(screen,map);
-    }
+    }*/
 
     writeToPng(map, "output.png");
 
